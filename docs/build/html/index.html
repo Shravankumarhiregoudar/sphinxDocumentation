@@ -1,0 +1,280 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Software Documentation &#8212; Sphinx demo V0.1 documentation</title>
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/language_data.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="software-documentation">
+<h1>Software Documentation<a class="headerlink" href="#software-documentation" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="configuration-of-project-environment">
+<h2>Configuration of Project Environment<a class="headerlink" href="#configuration-of-project-environment" title="Permalink to this headline">¶</a></h2>
+<p>Developing a Developer tool/GUI for performing spectral analysis.</p>
+</div>
+<div class="section" id="overview-on-how-to-run-this-project">
+<h2>Overview on How to Run this project<a class="headerlink" href="#overview-on-how-to-run-this-project" title="Permalink to this headline">¶</a></h2>
+<ol class="arabic simple">
+<li><p>Either install a Python IDE or create a Python virtual environment to install the packages required</p></li>
+<li><p>Install packages required</p></li>
+</ol>
+</div>
+<div class="section" id="setup-procedure">
+<h2>Setup procedure<a class="headerlink" href="#setup-procedure" title="Permalink to this headline">¶</a></h2>
+<ol class="arabic">
+<li><dl>
+<dt>Create a Python Virtual Environment</dt><dd><ul>
+<li><p>Install virtualenv:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">pip</span> <span class="n">install</span> <span class="n">virtualenv</span>
+</pre></div>
+</div>
+</li>
+<li><p>Create virtialenv:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">virtualenv</span> <span class="o">-</span><span class="n">p</span> <span class="n">python3</span> <span class="o">&lt;</span><span class="n">name</span> <span class="n">of</span> <span class="n">virtualenv</span><span class="o">&gt;</span>
+<span class="ow">or</span>
+<span class="n">conda</span> <span class="n">create</span> <span class="o">-</span><span class="n">n</span> <span class="n">yourenvname</span> <span class="n">python</span><span class="o">=</span><span class="n">x</span><span class="o">.</span><span class="n">x</span> <span class="n">anaconda</span>
+</pre></div>
+</div>
+</li>
+<li><p>Activate virtualenv:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">source</span> <span class="o">&lt;</span><span class="n">name</span> <span class="n">of</span> <span class="n">virtualenv</span><span class="o">&gt;/</span><span class="nb">bin</span><span class="o">/</span><span class="n">activate</span>
+</pre></div>
+</div>
+</li>
+<li><p>Install requirements:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">pip</span> <span class="n">install</span> <span class="o">-</span><span class="n">r</span> <span class="n">requirements</span><span class="o">.</span><span class="n">txt</span>
+</pre></div>
+</div>
+</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl>
+<dt>Install Sphinx and Rinotype</dt><dd><ul>
+<li><p>Install via cmd:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">pip</span> <span class="n">install</span> <span class="n">Sphinx</span>
+<span class="n">pip</span> <span class="n">install</span> <span class="n">rinohtype</span>
+</pre></div>
+</div>
+</li>
+<li><p>Setup Sphinx:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">sphinx</span><span class="o">-</span><span class="n">quickstart</span>
+</pre></div>
+</div>
+</li>
+<li><dl class="simple">
+<dt>Open source/conf.py::</dt><dd><p>Configure path to root directory. The path should point to the root directory of the project and looking at the project structure, from conf.py we should reach the root by going up two parent directories</p>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>Create the final document</dt><dd><p>make html/confluence</p>
+</dd>
+</dl>
+</li>
+</ul>
+</dd>
+</dl>
+</li>
+</ol>
+</div>
+<div class="section" id="code-documentation">
+<h2>CODE DOCUMENTATION<a class="headerlink" href="#code-documentation" title="Permalink to this headline">¶</a></h2>
+<div class="toctree-wrapper compound">
+</div>
+</div>
+<div class="section" id="load-data">
+<h2>1. LOAD DATA<a class="headerlink" href="#load-data" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-interpolate">
+<span id="interpolate"></span><h2>interpolate<a class="headerlink" href="#module-interpolate" title="Permalink to this headline">¶</a></h2>
+<dl class="py function">
+<dt id="interpolate.cubicInterpolationSpectra">
+<code class="sig-prename descclassname">interpolate.</code><code class="sig-name descname">cubicInterpolationSpectra</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">x</span></em>, <em class="sig-param"><span class="n">y</span></em>, <em class="sig-param"><span class="n">start</span></em>, <em class="sig-param"><span class="n">stop</span></em>, <em class="sig-param"><span class="n">totalPointsDesired</span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/interpolate.html#cubicInterpolationSpectra"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#interpolate.cubicInterpolationSpectra" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">CubicInterpolationSpectra</dt>
+<dd class="field-odd"><p>Interpolate original data with cubic spline</p>
+</dd>
+<dt class="field-even">Parameters</dt>
+<dd class="field-even"><ul class="simple">
+<li><p><strong>x</strong> (<em>array</em>) – original data array.</p></li>
+<li><p><strong>y</strong> (<em>array</em>) – original data array</p></li>
+<li><p><strong>start</strong> (<em>int</em>) – desired range start position</p></li>
+<li><p><strong>stop</strong> (<em>int</em>) – desired range stop position</p></li>
+<li><p><strong>totalPointsDesired</strong> (<em>int</em>) – the total number of points which defines the point spacing</p></li>
+</ul>
+</dd>
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>newX, New point spacing and newY, New interpolated data</p>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+<div class="section" id="preprocessing">
+<h2>2. PREPROCESSING<a class="headerlink" href="#preprocessing" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-featureSelection">
+<span id="featureselection"></span><h2>featureSelection<a class="headerlink" href="#module-featureSelection" title="Permalink to this headline">¶</a></h2>
+<dl class="py function">
+<dt id="featureSelection.RFFeatureSelection">
+<code class="sig-prename descclassname">featureSelection.</code><code class="sig-name descname">RFFeatureSelection</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">XTrain</span></em>, <em class="sig-param"><span class="n">yTrain</span></em>, <em class="sig-param"><span class="n">XTest</span></em>, <em class="sig-param"><span class="n">yTest</span></em>, <em class="sig-param"><span class="n">wavelengths</span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/featureSelection.html#RFFeatureSelection"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#featureSelection.RFFeatureSelection" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">RFFeatureSelection</dt>
+<dd class="field-odd"><p>Random Forest feature selection, Plot the wavelengths vs 
+Feature Importance for target based on RF on spectral data</p>
+</dd>
+<dt class="field-even">Parameters</dt>
+<dd class="field-even"><ul class="simple">
+<li><p><strong>xTrain</strong> (<em>ndarray</em>) – Train spectral data</p></li>
+<li><p><strong>yTrain</strong> (<em>ndarray</em>) – Train target data</p></li>
+<li><p><strong>xTest</strong> (<em>ndarray</em>) – Test spectral data</p></li>
+<li><p><strong>yTest</strong> (<em>ndarray</em>) – Test target data</p></li>
+<li><p><strong>wavelengths</strong> (<em>list</em>) – List denoting wavenumber or wavelength.</p></li>
+</ul>
+</dd>
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>Graph of wavelengths vs Feature Importance for target based on RF on spectral data</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="featureSelection.impRange">
+<code class="sig-prename descclassname">featureSelection.</code><code class="sig-name descname">impRange</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">m</span></em>, <em class="sig-param"><span class="n">n</span></em>, <em class="sig-param"><span class="n">XTrain</span></em>, <em class="sig-param"><span class="n">XTest</span></em>, <em class="sig-param"><span class="n">wavelengths</span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/featureSelection.html#impRange"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#featureSelection.impRange" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">ImpRange</dt>
+<dd class="field-odd"><p>Perpares important spectral data based on important wavelength range from the graph generated form 
+RFFeatureSelection function.</p>
+</dd>
+<dt class="field-even">Parameters</dt>
+<dd class="field-even"><ul class="simple">
+<li><p><strong>m</strong> (<em>int</em>) – Lower limit of important wavelength range</p></li>
+<li><p><strong>n</strong> (<em>int</em>) – Upper limit of important wavelength range</p></li>
+<li><p><strong>XTrain</strong> (<em>ndarray</em>) – Train spectral data</p></li>
+<li><p><strong>XTest</strong> (<em>ndarray</em>) – Test spectral data</p></li>
+<li><p><strong>wavelengths</strong> (<em>list</em>) – List denoting wavenumber or wavelength.</p></li>
+</ul>
+</dd>
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>Important train and test spectral data based on RF feature selection</p>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+<div class="section" id="indices-and-tables">
+<h2>Indices and tables<a class="headerlink" href="#indices-and-tables" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p><a class="reference internal" href="genindex.html"><span class="std std-ref">Index</span></a></p></li>
+<li><p><a class="reference internal" href="py-modindex.html"><span class="std std-ref">Module Index</span></a></p></li>
+<li><p><a class="reference internal" href="search.html"><span class="std std-ref">Search Page</span></a></p></li>
+</ul>
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="#">Sphinx demo</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Software Documentation</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#configuration-of-project-environment">Configuration of Project Environment</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#overview-on-how-to-run-this-project">Overview on How to Run this project</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#setup-procedure">Setup procedure</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#code-documentation">CODE DOCUMENTATION</a><ul class="simple">
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#load-data">1. LOAD DATA</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#module-interpolate">interpolate</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#preprocessing">2. PREPROCESSING</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#module-featureSelection">featureSelection</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#indices-and-tables">Indices and tables</a></li>
+</ul>
+</li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="#">Documentation overview</a><ul>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2020, Shravan.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.0.4</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="_sources/index.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>
